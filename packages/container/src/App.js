@@ -1,15 +1,15 @@
 import React from 'react';
+import {BrowserRouter} from "react-router-dom";
 import MarketingApp from "./components/MarketingApp";
+import Header from './components/Header';
 
 export default () => {
     return (
-        <div>
-            <div className={'containerApp'}>
-                <h1> Container App.... </h1>
-                {/*<button className={'loginButton'}>Login</button>*/}
+        <BrowserRouter>
+            <div>
+                <Header />
+                <MarketingApp/>
             </div>
-            <hr/>
-            <MarketingApp/>
-        </div>
+        </BrowserRouter>
     )
 }
